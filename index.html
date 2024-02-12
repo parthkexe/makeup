@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shweta Heda</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="styles.css">
+<style>
+body,h1,h2,h3,h5 {font-family: "Raleway", sans-serif}
+h4 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-pale-blue w3-animate-right w3-top w3-text-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">X</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-round-xlarge w3-padding-16 w3-animate-zoom">
+  <span class="w3-left w3-padding">Shweta Heda</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-quarter">
+      <img src="assets/c1r1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="assets/c1r2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="assets/c1r3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="assets/c1r4.jpg" style="width:100%" onclick="onClick(this)" alt="">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="assets/c2r1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="assets/c2r2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="assets/c2r3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="assets/c2r4.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+    
+    <div class="w3-quarter">
+        <img src="assets/c3r1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+        <img src="assets/c3r2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+        <img src="assets/c3r3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+        <img src="assets/c3r4.jpg" style="width:100%" onclick="onClick(this)" alt=""> 
+    </div>
+
+    <div class="w3-quarter">
+        <img src="assets/c4r1.jpg" style="width:100%" onclick="onClick(this)" alt="">
+        <img src="assets/c4r2.jpg" style="width:100%" onclick="onClick(this)" alt="">
+        <img src="assets/c4r3.jpg" style="width:100%" onclick="onClick(this)" alt="">
+        <img src="assets/c4r4.jpg" style="width:100%" onclick="onClick(this)" alt="">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-pale-blue w3-center w3-text-black w3-round-xlarge" id="about">
+    <b></b></h4>
+    <img src="assets/pic close.jpg" alt="Me" class="w3-image w3-round-xlarge" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>My Name</h4>
+      <p>Shweta Heda
+        Started around 2021 with a small concept of artistry, I am now ready to take BIG leap towards the next phase. Taking inspiration from the rich Indian traditional heritage and tying same with modern state of the art concepts.
+        <p>Services provided:
+          <br>• Bridal Radiance
+          <br>• Fashion Fantasy
+          <br>• Modelling Magic
+          <br>• Pre-Wedding Perfection
+          <br>• Baby Shower Glow
+          <br>• Join me in transforming ordinary moments into extraordinary memories. 
+
+      </p>
+      <p>mail: shwetavp8@gmail.com</p>
+      <p>tel: +91 95793 56788</p>
+    </div>
+  </div>
+
+  <hr class="w3-opacity">
+  <!-- Footer -->
+  <footer class="w3-container w3-round-xlarge w3-pale-blue">  
+    
+      <div class="w3-third">
+        <h3>SOCIAL LINKS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-round-xlarge w3-hover-blue-grey">
+            <a href="https://www.instagram.com/shwetamakeupartistry/"><img src="assets/Instagram_logo_2022.svg.webp" class="w3-left w3-margin-right" style="width:50px"></a>
+            <span class="w3-large">Instagram</span><br>
+            <span>@shwetamakeupartistry</span>
+          </li>
+          <li class="w3-padding-16 w3-round-xlarge w3-hover-blue-grey">
+            <a href="https://wa.link/n9umg9"><img src="assets/whatsapp.png" class="w3-left w3-margin-right" style="width:50px"></a>
+            <span class="w3-large">Whatsapp</span><br>
+            <span>Dm now!!</span>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-white w3-center w3-round-xlarge">Website by <a href="https://parthkexe.github.io/Parthk/" target="_blank" class="w3-hover-opacity">Parth</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
