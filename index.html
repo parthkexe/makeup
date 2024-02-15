@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="styles.css">
 <style>
 body,h1,h2,h3,h5 {font-family: "Raleway", sans-serif}
+h2 {text-align: center;}
 h4 {font-family: "Raleway", sans-serif}
 .w3-quarter img{margin-bottom: -6px; cursor: pointer}
 .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
@@ -19,8 +20,8 @@ h4 {font-family: "Raleway", sans-serif}
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-pale-blue w3-animate-right w3-top w3-text-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
   <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">X</a> 
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
 </nav>
 
@@ -38,10 +39,8 @@ h4 {font-family: "Raleway", sans-serif}
   <!-- Photo grid -->
  
   <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
     <div class="w3-bar">
     </div>
-  </div>
   
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -52,55 +51,69 @@ h4 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  <!-- About section -->
-  <div class="w3-container w3-pale-blue w3-center w3-text-black w3-round-xlarge" id="about">
-    <b></b></h4>
-    <img src="assets/pic close.jpg" alt="Me" class="w3-image w3-round-xlarge" width="600" height="650">
-    <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>Shweta Heda</h4>
-      <p>Shweta Heda
-        Started around 2021 with a small concept of artistry, I am now ready to take BIG leap towards the next phase. Taking inspiration from the rich Indian traditional heritage and tying same with modern state of the art concepts.
-        <p>Services provided:
-          <br>• Bridal Radiance
-          <br>• Fashion Fantasy
-          <br>• Modelling Magic
-          <br>• Pre-Wedding Perfection
-          <br>• Baby Shower Glow
-          <br>• Join me in transforming ordinary moments into extraordinary memories. 
-
-      </p>
-      <p>mail: shwetavp8@gmail.com</p>
-      <p>tel: +91 95793 56788</p>
+    <!-- About section -->
+    <div class="w3-container w3-pale-blue w3-center w3-text-black w3-round-xlarge" id="about">
+      <b></b></h4>
+      <img src="assets/pic close.jpg" alt="Me" class="w3-image w3-round-xlarge" width="600" height="650">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h4>Shweta Heda</h4>
+        <p>Shweta Heda
+          Started around 2021 with a small concept of artistry, I am now ready to take BIG leap towards the next phase. Taking inspiration from the rich Indian traditional heritage and tying same with modern state of the art concepts.
+          <p>Services provided:
+            <br>• Bridal Radiance
+            <br>• Fashion Fantasy
+            <br>• Modelling Magic
+            <br>• Pre-Wedding Perfection
+            <br>• Baby Shower Glow
+            <br>• Join me in transforming ordinary moments into extraordinary memories. 
+  
+        </p>
+        <p>mail: shwetavp8@gmail.com</p>
+        <p>tel: +91 95793 56788</p>
+      </div>
     </div>
-  </div>
 
-   <div class="w3-padding-32 w3-content" id="portfolio">
+  <div class="w3-padding-32 w3-content" id="portfolio">
     <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
-
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
+      <div class="w3-quarter">
         <img src="assets/c1r1.JPG" style="width:100%">
         <img src="assets/c1r2.JPG" style="width:100%">
         <img src="assets/c1r3.JPG" style="width:100%">
         <img src="assets/c1r4.JPG" style="width:100%">
       </div>
 
-      <div class="w3-half">
+      <div class="w3-quarter">
         <img src="assets/c2r1.JPG" style="width:100%">
         <img src="assets/c2r2.JPG" style="width:100%">
         <img src="assets/c2r3.JPG" style="width:100%">
         <img src="assets/c2r4.JPG" style="width:100%">
       </div>
+      <div class="w3-quarter">
+        <img src="assets/c3r1.JPG" style="width:100%">
+        <img src="assets/c3r2.JPG" style="width:100%">
+        <img src="assets/c3r3.JPG" style="width:100%">
+        <img src="assets/c3r4.JPG" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img src="assets/c4r1.JPG" style="width:100%">
+        <img src="assets/c4r2.JPG" style="width:100%">
+        <img src="assets/c4r3.JPG" style="width:100%">
+        <img src="assets/c4r4.JPG" style="width:100%">
+      </div>
     <!-- End photo grid -->
     </div>
+    <hr class="w3-opacity">
+
+
+
 
   <hr class="w3-opacity">
   <!-- Footer -->
   <footer class="w3-container w3-round-xlarge w3-pale-blue">  
     
-      <div class="w3-third">
+      <div class="w3-third" id="contact">
         <h3>SOCIAL LINKS</h3>
         <ul class="w3-ul">
           <li class="w3-padding-16 w3-round-xlarge w3-hover-blue-grey">
